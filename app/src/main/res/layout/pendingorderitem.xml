@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- ImageView Section -->
+    <ImageView
+        android:id="@+id/pendingorderImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/food_res"
+        android:contentDescription="Customer Icon"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Customer Info Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <!-- Customer Name Field -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pendingcustomername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Customer"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Quantity Field -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pendingquantityy"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Accept Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_accept"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:textColor="@android:color/white"
+        android:background="@drawable/green_button"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"/>
+</LinearLayout>

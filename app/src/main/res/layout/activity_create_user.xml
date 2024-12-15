@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back_arrow"
+        android:contentDescription="Back Button"/>
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/food_res"
+        android:contentDescription="App Icon"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Waves Of Food"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Subtitle Text -->
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Create New User Admin"
+        android:textColor="#2CB432"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/cardback"
+        android:hint="Name"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/user"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:elevation="5dp"
+        android:inputType="textPersonName"/>
+
+    <!-- Email or Phone Field -->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardback"
+        android:hint="Email or Phone Number"
+        android:drawableStart="@drawable/email"
+        android:elevation="5dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="5dp"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardback"
+        android:hint="Password"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:elevation="5dp"
+        android:inputType="textPassword"/>
+
+    <!-- Create User Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Create New User"
+        android:textColor="@color/white"
+        android:background="@drawable/green_button"/>
+
+
+</LinearLayout>

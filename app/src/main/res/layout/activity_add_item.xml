@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Back Button -->
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Navigate back"
+                android:src="@drawable/back_arrow" />
+
+            <!-- Title Text -->
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Add Item"
+                android:layout_gravity="center"
+                android:textSize="40sp" />
+
+            <!-- First EditText for Title -->
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/cardback"
+                android:elevation="2dp"
+                android:hint="Enter Food Name"
+                android:inputType="text"
+                android:padding="10dp" />
+
+            <!-- Second EditText for Description -->
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/cardback"
+                android:elevation="2dp"
+                android:hint="Enter Food Price"
+                android:padding="10dp" />
+
+            <!-- Short Description TextView -->
+
+            <!-- Button or TextView for Selecting an Image -->
+            <TextView
+                android:id="@+id/selectimage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cardback"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:text="Select Image"
+                android:textSize="20sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="16dp"
+                android:drawableRight="@drawable/add" />
+
+            <!-- CardView for selected image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:id="@+id/selectedimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/baseline_add_photo_alternate_24" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Long Description TextView -->
+            <TextView
+                android:id="@+id/longDescriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Short Description"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Long Description EditText -->
+            <EditText
+                android:id="@+id/editTextLongDescription"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cardback"
+                android:elevation="2dp"
+                android:hint="Enter  Description"
+                android:padding="10dp"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+            <TextView
+                android:id="@+id/shortDescriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Short Description"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Short Description EditText -->
+            <EditText
+                android:id="@+id/editTextShortDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cardback"
+                android:elevation="2dp"
+                android:hint="Enter Short Description"
+                android:padding="10dp" />
+
+            <!-- Submit Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Submit"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/green_button"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
