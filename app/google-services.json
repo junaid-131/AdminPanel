@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918867157591",
+    "project_id": "waves-of-food-c0dac",
+    "storage_bucket": "waves-of-food-c0dac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918867157591:android:a9d3dcfffd729be711b912",
+        "android_client_info": {
+          "package_name": "com.example.adminpanel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIkEPUDzWRkkcHbbb5iqcWxW6Nx-LkZBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -101,11 +101,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:hint="Name of Owner"
-            android:drawablePadding="5dp"
             android:drawableLeft="@drawable/user"
+            android:drawablePadding="5dp"
+            android:hint="Name of Owner"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,6 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameofResturant"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:drawableLeft="@drawable/user"
@@ -143,6 +145,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:drawableLeft="@drawable/email"
@@ -162,6 +165,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:drawableLeft="@drawable/password"
@@ -174,7 +178,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/LoginBtn"
+        android:id="@+id/create_account"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -191,9 +195,9 @@
         android:layout_marginTop="24dp"
         android:text="Already Have an Account?"
         android:textColor="#4CAF50"
-        app:layout_constraintEnd_toEndOf="@+id/LoginBtn"
-        app:layout_constraintStart_toStartOf="@+id/LoginBtn"
-        app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
+        app:layout_constraintEnd_toEndOf="@+id/create_account"
+        app:layout_constraintStart_toStartOf="@+id/create_account"
+        app:layout_constraintTop_toBottomOf="@+id/create_account" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
